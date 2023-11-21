@@ -5,7 +5,7 @@ import "@basal-ui/forms/dist/style.css";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: "Example/Input",
+  title: "Forms/Input",
   component: Input,
   parameters: {
     layout: "centered",

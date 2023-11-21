@@ -9,6 +9,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/index.tsx"),
       name: "forms",
+      formats: ["es", "cjs"],
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
@@ -20,5 +21,10 @@ export default defineConfig({
         },
       },
     },
+    emptyOutDir: false,
+  },
+  esbuild: {
+    minifyIdentifiers: false,
+    keepNames: true,
   },
 });
