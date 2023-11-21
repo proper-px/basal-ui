@@ -6,6 +6,6 @@
     },
     "dev": {},
     "dry-run": {},
-    "lint": {}
+    "sym-link": {}
   }
 }
