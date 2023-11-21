@@ -1,6 +1,6 @@
 {
   "name": "@basal-ui/forms",
-  "private": true,
+  "public": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -21,11 +21,13 @@
     "tsconfig": "*",
     "typescript": "^5.2.2",
     "vite": "^5.0.0",
-    "vite-plugin-dts": "^3.6.3"
+    "vite-plugin-dts": "^3.6.3",
+    "sass": "^1.69.5"
   },
   "main": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ]
 }

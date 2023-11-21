@@ -1,0 +1,13 @@
+$input-padding: 10px 8px;
+$input-border-size: 1px;
+$input-border-style: solid;
+$input-border-color: #333333;
+
+:root {
+  --basal-input-padding: #{$input-padding};
+  --basal-input-border-size: #{$input-border-size};
+  --basal-input-border-style: #{$input-border-style};
+  --basal-input-border-color: #{$input-border-color};
+}
+
+@import "./input";

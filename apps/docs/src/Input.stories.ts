@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Input } from "@basal-ui/forms";
+import "@basal-ui/forms/dist/style.css";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
@@ -9,7 +10,6 @@ const meta = {
   parameters: {
     layout: "centered",
   },
-
   tags: ["autodocs"],
 } satisfies Meta<typeof Input>;
 

@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.tsx"),
-      name: "ui",
+      name: "forms",
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
@@ -17,7 +17,6 @@ export default defineConfig({
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
-          "react/jsx-runtime": "JSXRuntime",
         },
       },
     },
