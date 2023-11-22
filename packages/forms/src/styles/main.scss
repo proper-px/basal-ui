@@ -1,8 +1,150 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 $input-padding: 10px 8px;
 $input-border-size: 1px;
 $input-border-style: solid;
 $input-border-color: #333333;
 $input-radius: 4px;
+$input-margin-bottom: 6px;
+
+$label-font-size: 16px;
+$label-font-weight: 600;
+$label-margin-bottom: 4px;
+
+$field-error-color: #e4002b;
+$field-error-font-size: 12px;
+$field-error-margin-top: 4px;
 
 :root {
   --basal-input-padding: #{$input-padding};
@@ -10,6 +152,15 @@ $input-radius: 4px;
   --basal-input-border-style: #{$input-border-style};
   --basal-input-border-color: #{$input-border-color};
   --basal-input-radius: #{$input-radius};
+  --basal-input-margin-bottom: #{$input-margin-bottom};
+  --label-font-size: #{$label-font-size};
+  --label-font-weight: #{$label-font-weight};
+  --label-margin-bottom: #{$label-margin-bottom};
+  --field-error-color: #{$field-error-color};
+  --field-error-font-size: #{$field-error-font-size};
+  --field-error-margin-top: #{$field-error-margin-top};
 }
 
 @import "./input";
+@import "./label";
+@import "./fieldError";

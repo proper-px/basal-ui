@@ -3,4 +3,6 @@
   border: var(--basal-input-border-size) var(--basal-input-border-style)
     var(--basal-input-border-color);
   border-radius: var(--basal-input-radius);
+  width: 100%;
+  margin-bottom: var(--basal-input-margin-bottom);
 }
