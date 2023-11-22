@@ -1,0 +1,10 @@
+[data-basal-radio] {
+  margin-top: var(--basal-radio-wrapper-margin-top);
+  margin-bottom: var(--basal-radio-wrapper-margin-bottom);
+  input {
+    accent-color: var(--basal-radio-accent-color);
+  }
+  label {
+    margin-left: var(--basal-radio-label-margin-left);
+  }
+}

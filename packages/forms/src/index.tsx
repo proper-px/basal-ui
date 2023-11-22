@@ -7,3 +7,4 @@ export { Select, type SelectProps } from "./components/Select";
 export { FieldError, type FieldErrorProps } from "./components/FieldError";
 export { Label, type LabelProps } from "./components/Label";
 export { FormField, type FormFieldProps } from "./components/FormField";
+export { Fieldset, type FieldsetProps } from "./components/Fieldset";

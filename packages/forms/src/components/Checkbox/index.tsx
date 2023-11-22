@@ -8,8 +8,8 @@ export type CheckboxProps = Omit<ComponentProps<"input">, "type"> & {
 export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
   (props, ref) => {
     return (
-      <div>
-        <input type="checkbox" ref={ref} {...props} data-basal-checkbox />
+      <div data-basal-checkbox>
+        <input type="checkbox" ref={ref} {...props} />
         <label htmlFor={props.id}>{props.label}</label>
       </div>
     );

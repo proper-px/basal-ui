@@ -38,7 +38,7 @@ export const FormField = forwardRef<HTMLDivElement, FormFieldProps>(
     });
 
     return (
-      <div ref={ref}>
+      <div ref={ref} data-basal-form-field>
         <Label htmlFor={id} id={`${id}--label`}>
           {label}
         </Label>
