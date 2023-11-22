@@ -5,4 +5,7 @@
   border-radius: var(--basal-input-radius);
   width: 100%;
   margin-bottom: var(--basal-input-margin-bottom);
+  &[aria-invalid] {
+    border-color: var(--basal-input-border-color-invalid);
+  }
 }

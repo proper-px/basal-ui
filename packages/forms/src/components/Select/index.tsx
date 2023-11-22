@@ -12,7 +12,7 @@ export const Select = forwardRef(
     ref: Ref<HTMLSelectElement>
   ) => {
     return (
-      <select {...props} ref={ref}>
+      <select {...props} ref={ref} data-basal-select>
         {options.map((item) => {
           return (
             <option value={item[valueKey] as string}>

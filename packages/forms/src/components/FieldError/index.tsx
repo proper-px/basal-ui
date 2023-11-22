@@ -7,8 +7,8 @@ export const FieldError = ({ message, id }: FieldErrorProps) => {
   if (!message) return null;
 
   return (
-    <div data-basal-field-error id={id}>
-      {message}
+    <div data-basal-field-error id={id} aria-live="polite">
+      Error: {message}
     </div>
   );
 };

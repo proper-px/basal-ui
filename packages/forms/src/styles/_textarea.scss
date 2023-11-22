@@ -1,0 +1,11 @@
+[data-basal-textarea] {
+  padding: var(--basal-textarea-padding);
+  border: var(--basal-textarea-border-size) var(--basal-textarea-border-style)
+    var(--basal-textarea-border-color);
+  border-radius: var(--basal-textarea-radius);
+  width: 100%;
+  margin-bottom: var(--basal-textarea-margin-bottom);
+  &[aria-invalid] {
+    border-color: var(--basal-textarea-border-color-invalid);
+  }
+}

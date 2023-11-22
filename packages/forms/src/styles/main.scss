@@ -137,6 +137,23 @@ $input-border-style: solid;
 $input-border-color: #333333;
 $input-radius: 4px;
 $input-margin-bottom: 6px;
+$input-border-color-invalid: #e4002b;
+
+$textarea-padding: $input-padding;
+$textarea-border-size: $input-border-size;
+$textarea-border-style: $input-border-style;
+$textarea-border-color: $input-border-color;
+$textarea-radius: $input-radius;
+$textarea-margin-bottom: $input-margin-bottom;
+$textarea-border-color-invalid: $input-border-color-invalid;
+
+$select-padding: $input-padding;
+$select-border-size: $input-border-size;
+$select-border-style: $input-border-style;
+$select-border-color: $input-border-color;
+$select-radius: $input-radius;
+$select-margin-bottom: $input-margin-bottom;
+$select-border-color-invalid: $input-border-color-invalid;
 
 $label-font-size: 16px;
 $label-font-weight: 600;
@@ -146,6 +163,9 @@ $field-error-color: #e4002b;
 $field-error-font-size: 12px;
 $field-error-margin-top: 4px;
 
+$field-description-font-size: 12px;
+$field-description-margin-top: 4px;
+
 :root {
   --basal-input-padding: #{$input-padding};
   --basal-input-border-size: #{$input-border-size};
@@ -153,14 +173,34 @@ $field-error-margin-top: 4px;
   --basal-input-border-color: #{$input-border-color};
   --basal-input-radius: #{$input-radius};
   --basal-input-margin-bottom: #{$input-margin-bottom};
+  --basal-input-border-color-invalid: #{$input-border-color-invalid};
+  --basal-textarea-padding: #{$textarea-padding};
+  --basal-textarea-border-size: #{$textarea-border-size};
+  --basal-textarea-border-style: #{$textarea-border-style};
+  --basal-textarea-border-color: #{$textarea-border-color};
+  --basal-textarea-radius: #{$textarea-radius};
+  --basal-textarea-margin-bottom: #{$textarea-margin-bottom};
+  --basal-textarea-border-color-invalid: #{$textarea-border-color-invalid};
+  --basal-select-padding: #{$select-padding};
+  --basal-select-border-size: #{$select-border-size};
+  --basal-select-border-style: #{$select-border-style};
+  --basal-select-border-color: #{$select-border-color};
+  --basal-select-radius: #{$select-radius};
+  --basal-select-margin-bottom: #{$select-margin-bottom};
+  --basal-select-border-color-invalid: #{$select-border-color-invalid};
   --label-font-size: #{$label-font-size};
   --label-font-weight: #{$label-font-weight};
   --label-margin-bottom: #{$label-margin-bottom};
   --field-error-color: #{$field-error-color};
   --field-error-font-size: #{$field-error-font-size};
   --field-error-margin-top: #{$field-error-margin-top};
+  --field-description-font-size: #{$field-description-font-size};
+  --field-description-margin-top: #{$field-description-margin-top};
 }
 
 @import "./input";
+@import "./textarea";
+@import "./select";
 @import "./label";
 @import "./fieldError";
+@import "./fieldDescription";

@@ -1,0 +1,11 @@
+[data-basal-select] {
+  padding: var(--basal-select-padding);
+  border: var(--basal-select-border-size) var(--basal-select-border-style)
+    var(--basal-select-border-color);
+  border-radius: var(--basal-select-radius);
+  width: 100%;
+  margin-bottom: var(--basal-select-margin-bottom);
+  &[aria-invalid] {
+    border-color: var(--basal-select-border-color-invalid);
+  }
+}
