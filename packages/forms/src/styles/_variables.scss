@@ -1,0 +1,47 @@
+$input-padding: 10px 8px !default;
+$input-border-size: 1px !default;
+$input-border-style: solid !default;
+$input-border-color: #333333 !default;
+$input-radius: 4px !default;
+$input-margin-bottom: 6px !default;
+$input-border-color-invalid: #e4002b !default;
+
+$radio-accent-color: #1e90ff !default;
+$radio-label-margin-left: 4px !default;
+$radio-wrapper-margin-top: 6px !default;
+$radio-wrapper-margin-bottom: 6px !default;
+
+$checkbox-accent-color: #1e90ff !default;
+$checkbox-label-margin-left: 4px !default;
+$checkbox-wrapper-margin-top: 6px !default;
+$checkbox-wrapper-margin-bottom: 6px !default;
+
+$textarea-padding: $input-padding !default;
+$textarea-border-size: $input-border-size !default;
+$textarea-border-style: $input-border-style !default;
+$textarea-border-color: $input-border-color !default;
+$textarea-radius: $input-radius !default;
+$textarea-margin-bottom: $input-margin-bottom !default;
+$textarea-border-color-invalid: $input-border-color-invalid !default;
+
+$select-padding: $input-padding !default;
+$select-border-size: $input-border-size !default;
+$select-border-style: $input-border-style !default;
+$select-border-color: $input-border-color !default;
+$select-radius: $input-radius !default;
+$select-margin-bottom: $input-margin-bottom !default;
+$select-border-color-invalid: $input-border-color-invalid !default;
+
+$label-font-size: 16px !default;
+$label-font-weight: 600 !default;
+$label-margin-bottom: 4px !default;
+
+$field-error-color: #e4002b !default;
+$field-error-font-size: 12px !default;
+$field-error-margin-top: 4px !default;
+
+$field-description-font-size: 12px !default;
+$field-description-margin-top: 4px !default;
+
+$form-field-margin-bottom: 24px !default;
+$fieldset-margin-bottom: 24px !default;
