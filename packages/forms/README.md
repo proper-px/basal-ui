@@ -13,6 +13,8 @@
     - [Radio](#radio)
     - [Select](#select)
     - [Textarea](#textarea)
+  - [Styling](#styling)
+    - [Recommended approach to importing styles](#recommended-approach-to-importing-styles)
 
 ## Installation
 
@@ -28,6 +30,8 @@
 6. In the project you want to use the package in, run `npm link @basal-ui/forms` (ensure you're using the same version of `node`)
 
 ## Components
+
+🧰
 
 ### Checkbox
 
@@ -255,4 +259,36 @@ The `textarea` html element will have the `data-basal-textarea` attribute.
 import { Textarea } from "@basal-ui/forms";
 
 <Textarea id="comments" placeholder="Please leave your comments here" />;
+```
+
+## Styling
+
+🫦
+
+The `@basal-ui/forms` package is built using `scss`, and offers the compiled css in the `dist` directory.
+
+We leverage both `scss variables` and `css variables` to allow for the most flexibility when it comes to styling.
+
+The `scss variables` are used to generate the `css variables` and are used as the default values for the `css variables`.
+
+The `css variables` are used to style the components.
+
+### Recommended approach to importing styles
+
+1. install the `@basal-ui/forms` package
+2. create a `scss` file in your project
+3. It's contents should be as follows:
+
+```scss
+@import "@basal-ui/forms/src/styles/_variables.scss";
+
+// Override the variables here
+// $input-padding: 10px 6px;
+
+@import "@basal-ui/forms/src/styles/root";
+
+// If you want a different reset than the one provided by the package you can import your own here, and remove the import below.
+@import "@basal-ui/forms/src/styles/reset";
+
+@import "@basal-ui/forms/src/styles/styles";
 ```
