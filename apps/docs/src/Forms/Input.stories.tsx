@@ -15,6 +15,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Example: Story = {
   args: {
-    placeholder: "Input",
+    placeholder: "First name",
+    id: "firstName",
   },
 };

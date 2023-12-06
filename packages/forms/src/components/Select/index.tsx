@@ -4,6 +4,7 @@ export type SelectProps<T> = ComponentProps<"select"> & {
   options: T[];
   labelKey: keyof T;
   valueKey: keyof T;
+  id: string;
 };
 
 export const Select = forwardRef(

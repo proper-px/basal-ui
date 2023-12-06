@@ -4,6 +4,7 @@ import { FieldError } from "../FieldError";
 
 export type FieldsetProps = ComponentProps<"fieldset"> & {
   legend: string;
+  id: string;
   description?: string;
   error?: string;
 };

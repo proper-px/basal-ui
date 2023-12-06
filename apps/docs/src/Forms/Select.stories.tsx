@@ -13,6 +13,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Example: Story = {
   args: {
+    id: "select",
     options: [
       { id: 1, name: "Option 1" },
       { id: 2, name: "Option 2" },
