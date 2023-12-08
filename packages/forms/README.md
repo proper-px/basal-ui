@@ -280,7 +280,7 @@ The `css variables` are used to style the components.
 3. It's contents should be as follows:
 
 ```scss
-@import "@basal-ui/forms/src/styles/_variables.scss";
+@import "@basal-ui/forms/src/styles/variables";
 
 // Override the variables here
 // $input-padding: 10px 6px;
