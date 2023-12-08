@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite build --watch",
     "build": "tsc && vite build",
+    "prerelease-alpha": "npm version premajor --preid alpha",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "dry-run": "npm pack --dry-run",
     "sym-link": "npm link"
